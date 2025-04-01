@@ -19,7 +19,7 @@ app.use('/api/products', productRoute)
 
 mongoose.connect("mongodb+srv://kaleabwondwossen12:rbACngaob5XyvJ9g@dastabasedb.rnu5m.mongodb.net/NodeAPI?retryWrites=true&w=majority&appName=DastabaseDB ").then(() => {
     app.listen(9000, () => {
-        console.log('Server is running on port 8000')
+        console.log('Server is running on port 9000')
     })
 
     console.log('Connected to MongoDB')
@@ -27,7 +27,7 @@ mongoose.connect("mongodb+srv://kaleabwondwossen12:rbACngaob5XyvJ9g@dastabasedb.
     console.log('Connection failed')
 })
 app.get('/', (req, res) => {
-    res.send(`Welcome to Node API : PORT 8000`)
+    res.send(`Welcome to Node API : PORT 9000`)
 })
 
 module.exports =  app
